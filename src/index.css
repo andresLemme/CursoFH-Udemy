@@ -12,5 +12,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   padding: 60px;
 }
+input{
+  color:blue;
+  font-size: 50x;
+  width: 100%;
 
+}
 
