@@ -14,7 +14,6 @@ const handleAdd = () =>{
       <h2>GifExpertApp</h2>
       <hr/>
       <button onClick={handleAdd}>Agregar</button>
-
       {
         categories.map((category) =>{
           return(
