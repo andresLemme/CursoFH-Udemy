@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { GifsGridItem } from "./GifsGridItem";
 
 export const GifGrid = ({ category }) => {
+  const [images, setimages] = useState([]);
 
-
-   useEffect(() => {
-    getGifs()
-   }, []);
+  useEffect(() => {
+    getGifs();
+  }, []);
 
   const getGifs = async () => {
     const url =
@@ -21,13 +22,19 @@ export const GifGrid = ({ category }) => {
       };
     });
 
-    console.log(gifs);
+    setimages(gifs);
+    // console.log(gifs);
   };
 
   // getGifs();
+
   return (
-    <>
+    <div>
       <h3>{category}</h3>
-    </>
+
+      {images.map(image => (
+        <GifsGridItem key={image.id} {...image} />
+      ))}
+    </div>
   );
 };
