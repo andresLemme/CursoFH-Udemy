@@ -6,7 +6,7 @@ exports[`Prueba de <GifsGridItem/> debe mostrar el comonente correctamente 1`] =
 >
   <img
     alt="Un titulo"
-    src="htts://localhost/algo.jg"
+    src="htts://localhost/algo.jpug"
   />
   <p>
     Un titulo
