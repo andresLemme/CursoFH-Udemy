@@ -7,6 +7,7 @@ export const AddCategory = ({setCategories}) => {
   const handleInput = e => {
     setinputValue(e.target.value);
     // console.log(inputValue)
+    console.log('handleIInut llamado')
   };
   const handleSubmit = (e) => {
     e.preventDefault()
